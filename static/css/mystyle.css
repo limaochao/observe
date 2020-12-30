@@ -1,0 +1,398 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: #0e0e0e;
+    /* background-color: #aaa; */
+    line-height: 1.2em;
+}
+
+/* header 样式 */
+#header {
+    width: 100%;
+    display: table;
+    background-color: #000;
+    padding: 0px 5px;
+    /* box-shadow: #555 0 0 5px 0; */
+}
+
+
+/* logo样式 */
+span.logo_box {
+    display: table-cell;
+    width: 30%;
+    height: 100%;
+    padding: 5px 0px 5px 10px;
+}
+
+span.logo_box a {
+    display: block;
+}
+
+span.logo_box img.logo {
+    display: block;
+    /* padding: 10px 0px; */
+    width: 100px;
+}
+
+/* 标题头样式 */
+span.head_title {
+    display: table-cell;
+    text-align: center;
+    color: #9b9;
+    width: 40%;
+    position: absolute;
+
+}
+
+span.head_title h2 {
+    padding: 5px;
+    display: block;
+    /* font-size: 1.8em; */
+    line-height: 1.1em;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* 快捷按钮样式 */
+span.button_box {
+    display: table-cell;
+    left: 89%;
+    width: 10%;
+    padding: 1em;
+    text-align: right;
+    position: absolute;
+}
+
+span.button_box a {
+    padding-left: 10px;
+    display: inline;
+    color: #888;
+    font-size: .7em;
+    list-style-type: none;
+}
+
+span.button_box a:hover {
+    color: #ddd;
+}
+
+span.button_box a.button {
+    width: 24px;
+    height: auto;
+}
+
+/* header样式结束 */
+
+
+/* 导航栏样式 */
+
+div.nav {
+    width: 100%;
+    height: 30px;
+    display: block;
+    font-size: 1em;
+    font-family: helvetica, arials, sans-serif;
+    background-color: #222;
+    position: relative;
+    /* padding: 5px; */
+}
+
+div.nav a {
+    color: #888;
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    background-color: #222;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: .35em 1em .25em 1em;
+    border-color: transparent;
+    /* background-clip: padding-box; */
+}
+
+div.nav > ul {
+    width: 90%;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+}
+
+div.nav > ul > li > a {
+    vertical-align: bottom;
+    border: none;
+    text-align: center;
+} 
+
+div.nav li {
+    list-style-type: none;
+    float: left;
+    display: block;
+    height: 100%;
+}
+
+div.nav li ul {
+    z-index: 999;
+    display: inline;
+    width: 100%;
+}
+
+div.nav li ul > li {
+    display: block;
+}
+
+div.nav a:hover {
+    background-color: #630;
+    color: #ddd;
+    border-bottom: 2px solid #aaa;
+}
+
+div.nav li a {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-top: 2px solid #0e0e0e;
+}
+
+div.nav li > a:active {
+    background-color: #111100;
+}
+
+div.nav li:hover > ul {
+    display: block;
+}
+
+div.nav li ul {
+    position: relative;
+    display: none;
+    left: 0;
+    top: 100%;
+}
+
+div.nav li li {
+    float: none;
+}
+
+div.nav .time {
+    left: 90%;
+    width: 9%;
+    z-index: 999;
+    color: #5a5;
+    padding-top: 7px;
+    position: absolute;
+    display: inline;
+}
+
+div.nav .time > li {
+    font-size: .7em;
+    float: none;
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* 导航栏结束 */
+
+/* 侧边栏开始 */
+
+aside {
+    border-color: transparent;
+    margin: 10px 10px;
+    width: 230px;
+    height: 400px;
+    background-color: #111100;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+
+aside.l_aside {
+    display: table-cell;
+    float: left;
+    overflow-x: scroll;
+    overflow-y: scroll; 
+}
+
+.l_aside::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+}
+
+.l_aside::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.l_aside::-webkit-scrollbar-button {
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #440;
+}
+
+.l_aside::-webkit-scrollbar-thumb {
+    background-color: #050;
+}
+
+.l_aside::-webkit-scrollbar-corner {
+    color: #020;
+}
+
+/* 侧边栏结束 */
+
+/* 主监控图样式 */
+
+div.major_img { 
+    display: block;
+    margin-top: 5px;
+    margin-right: 20px;
+    min-width: 600px;
+    max-width: 2000px;
+    position: relative;
+}
+
+div.major_img table {
+    /* 独立表格 */
+    border-collapse: separate; 
+    width: 100%
+}
+
+div.major_img tbody {
+    width: 100%;
+}
+
+div.major_img tr {
+    width: 100%
+}
+
+div.major_img td {
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    width: 50%;
+    height: 100%;
+}
+
+div.major_img a {
+    text-align: center;
+    display: block;
+    font-size: .9em;
+    color: #170;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+div.major_img a:hover {
+    background-color: #130;
+    color: #2b0;
+}
+
+div.major_img a:active {
+    background-color: #001100;
+    color: #ccc;
+}
+
+div.major_img a img{
+    width: 100%;
+    float: left;
+    padding: 1% 2%;
+/*     padding-bottom: 10px; */
+}
+
+div.major_img a {
+    padding-bottom: 1%;
+}
+
+div.moni_img, div.major_img {
+    margin-left: 250px;
+}
+
+/* 机柜监控图样式 */
+div.moni_img {
+    color: #ddd;
+    min-width: 800px;
+    max-width: 2000px;
+    margin-top: 10px;
+    margin-right: 20px;
+    position: relative;
+}
+
+div.moni_img table {
+    border-collapse: separate;
+    display: block;
+}
+
+div.moni_img tr {
+    /* margin-bottom: 10px; */
+}
+
+div.moni_img td {
+    padding-bottom: 0px;
+    background-color: #1a1a1a;
+    max-width: 600px;
+    min-width: 200px;
+    width: 25%;
+}
+
+div.moni_img td a {
+    display: block;
+    margin: 0;
+    padding: 2%;
+    padding-bottom: 1%;
+    text-align: center;
+    display: block;
+    font-size: .7em;
+    color: #170;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+div.moni_img td a > p {
+    margin: 0px;
+}
+
+div.moni_img td a > img {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+div.moni_img td > a:hover {
+    background-color: #130;
+    color: #2b0;
+}
+
+div.moni_img td > a:active {
+    background-color: #001100;
+    color: #ccc;
+}
+
+div.moni_img.click_event > button {
+    font-size: .8em;
+    color: #888; 
+    font-style: italic;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+}
+
+div.moni_img.click_event > button:hover {
+    text-decoration: underline;
+    font-style: normal;
+    color: #ddd;
+}
+
+
+div.moni_img.click_event > table{
+    display: none;
+} 
+
+div.moni_img.click_event button:focus ~ table {
+    display: block;
+}
+
