@@ -17,25 +17,10 @@
   <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.1/aliplayer-min.js"></script>
 {% endblock%}
 
-{% block content %}
-  <div class="prism-player" id=player-con></div>
-    <script>
-      var player = new Aliplayer({
-          "id": "player-con",
-          "source": "{{ link }}",
-          "width": "1000px",
-          "height": "500px",
-          "autoplay": true,
-          "isLive": true,
-          "rePlay": false,
-          "playsinline": true,
-          "preload": true,
-          "controlBarVisibility": "hover",
-          "useH5Prism": true
-        }, function (player) {
-          console.log("The player is created");
-        }
-      );
-    </script>
+{% block content %}  
+  
+  {% for camera in cameras %}
+    <li><a href="/cameras/{{ camera.camera_id }}">{{ camera.camera_name}}</a></li>
+  {% endfor %}
   
 {% endblock %}

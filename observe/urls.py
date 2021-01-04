@@ -17,9 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 from login import views as login_views
 from cameras import views as cameras_views
+from cameras import urls as cameras_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login_views.sign),
-    path('cameras/', cameras_views.getCameras)
+    path('cameras/', include(cameras_urls)),
 ]
