@@ -93,3 +93,7 @@ label {
 .content {
   color: #ffffff;
 }
+
+#navbar-right, #admin {
+  display: none;
+}

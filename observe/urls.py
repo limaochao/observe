@@ -22,5 +22,6 @@ from cameras import urls as cameras_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login_views.sign),
+    path('logout/', login_views.sign_out),
     path('cameras/', include(cameras_urls)),
 ]
